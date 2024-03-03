@@ -49,11 +49,34 @@ body {
 .floating-nav {
     position: fixed;
     top: 50%;
+    left: -100rem;
+    /* normal 2px */
+    transform: translateY(-50%);
+    z-index: 1001;
+    user-select: none;
+    /* Ensure it is above swiper */
+    transition: left 0.5s ease;
+    /* transisi  */
+}
+
+.trigger-floating-nav {
+    position: fixed;
+    top: 50%;
     left: 2px;
     transform: translateY(-50%);
     z-index: 1001;
     user-select: none;
     /* Ensure it is above swiper */
+    transition: 0.5s ease;
+}
+
+.floating-music-toggle {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    transform: translateX(0);
+    z-index: 1001;
+    user-select: none;
 }
 
 .description-wrapper {
@@ -89,3 +112,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+
+/* Pengaturan Image */

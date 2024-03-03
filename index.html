@@ -42,9 +42,9 @@
                         Selamat Datang Di Hoyo Impact Website!
                     </h3>
                 </div>
-                <img src="src/img/HI.png" alt="" class="img-fluid">
+                <img src="src/img/Bronya.jpg" alt="" class="img-fluid" id="gambar-1">
             </div>
-            <div class="swiper-slide">
+            <div class=" swiper-slide">
                 <div id="" class="text-white text-wrap description-wrapper">
                     <div class="card shadow text-dark"
                         style="min-width: 230px; max-width: 100%; background-color: rgba(255, 255, 255, 0.6);">
@@ -60,19 +60,20 @@
                         </div>
                     </div>
                 </div>
-                <img src="src/img/HSR.jpeg" alt="" class="img-fluid">
+                <img src="src/img/Kafka3.jpeg" alt="" class="img-fluid" id="gambar-2">
             </div>
             <div class="swiper-slide">
                 <div id="" class="text-white text-wrap description-wrapper">
                     <div class="card shadow text-dark"
                         style="min-width: 230px; max-width: 100%; background-color: rgba(255, 255, 255, 0.6);">
+                        <!-- background-color: rgba(255, 255, 255, 0.6); -->
                         <div class="card-header">
                             <h4 class="fw-medium text-wrap mb-0">
                                 List Of Game :
                             </h4>
                         </div>
                         <div class="card-body fw-light fs-6">
-                          <div class="card-text text-start">
+                            <div class="card-text text-start">
                                 <ul>
                                     <li>GENSHIN IMPACT</li>
                                     <li>HONKAI IMPACT</li>
@@ -83,39 +84,59 @@
                         </div>
                     </div>
                 </div>
-                <img src="src/img/GI.png" alt="">
+                <img src="src/img/Noelle.jpg" alt="" id="gambar-3">
             </div>
         </div>
         <div class="swiper-pagination"></div>
     </div>
 
+    <!-- buat trigger -->
+    <div id="trigger-floating-nav" style="cursor: pointer;">
+        <div class="trigger-floating-nav">
+            <div class="vertical-bar border ms-lg-1 rounded text-white"
+                style="margin-bottom: 3rem; background-color: rgba(255, 255, 255, 0.4); padding: 6px;">
+                <i class="fa-solid fa-bars" style="transform: rotate(90deg);font-size: 1rem;color: #fff;"></i>
+            </div>
+        </div>
+    </div>
+
     <!-- Floating Nav Vertical -->
-    <div class="floating-nav shadow">
-        <div class="d-flex px-2 py-2 rounded gap-2 border"
-            style="flex-direction: column; background-color: rgba(255, 255, 255, 0.2);">
-            <div class="">
-                <a target="_blank" href="https://chat.whatsapp.com/F98ts2eYcw69DnGZcPqMlv" class="border-bottom pb-1">
-                    <i class="fa-brands fa-whatsapp" style="font-size: 1.5rem;color: #fff;"></i>
-                </a>
+    <div id="floating-nav">
+        <div class="floating-nav shadow">
+            <div class="d-flex px-2 py-2 rounded gap-2 border"
+                style="flex-direction: column; background-color: rgba(255, 255, 255, 0.4);">
+                <div class="shadow">
+                    <a target="_blank" href="https://chat.whatsapp.com/F98ts2eYcw69DnGZcPqMlv"
+                        class="border-bottom pb-1">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 1.5rem;color: #fff;"></i>
+                    </a>
+                </div>
+                <div class="shadow">
+                    <a target="_blank" href="https://forms.gle/guSUEGQ7g95SC7Fc6" class="border-bottom pb-1">
+                        <i class="fa-solid fa-plus" style="font-size: 1.5rem;color: #fff;"></i>
+                    </a>
+                </div>
+                <div class="shadow">
+                    <a target="_blank"
+                        href="https://docs.google.com/spreadsheets/d/1u_4gd1MiH7-5fNZZ7Z5LmcPlKjaljS3NFxUV37PwGWY">
+                        <i class="fa-solid fa-database" style="font-size: 1.5rem;color: #fff;"></i>
+                    </a>
+                </div>
             </div>
-            <div class="">
-                <a target="_blank" href="https://forms.gle/guSUEGQ7g95SC7Fc6" class="border-bottom pb-1">
-                    <i class="fa-solid fa-plus" style="font-size: 1.5rem;color: #fff;"></i>
-                </a>
-            </div>
-            <div>
-                <a target="_blank"
-                    href="https://docs.google.com/spreadsheets/d/1u_4gd1MiH7-5fNZZ7Z5LmcPlKjaljS3NFxUV37PwGWY">
-                    <i class="fa-solid fa-database" style="font-size: 1.5rem;color: #fff;"></i>
-                </a>
-            </div>
+        </div>
+    </div>
+
+    <!-- Music Toggle Floating -->
+    <div class="floating-music-toggle">
+        <div id="music-toggler" class="text-white px-2 border rounded"
+            style="cursor: pointer; font-size: 24px; min-width: 48px; max-width: 48px;">
+            <!-- <i class="fa-solid fa-volume-high"></i> -->
         </div>
     </div>
 
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -124,7 +145,6 @@
             fadeEffect: {
                 crossFade: true
             },
-
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -139,23 +159,6 @@
                 $('#loader').fadeOut('slow');
             }, 1000); // 2000 milliseconds (2 seconds) delay
         });
-
-
-
-
-
-        // window.addEventListener('load', function () {
-
-        //     loader.style.display = 'none';
-        // });
-    </script>
-
-
-    <script>
-        // window.addEventListener('load', function () {
-        //     var loader = document.getElementById('loader');
-        //     loader.style.display = 'none';
-        // });
     </script>
 
     <!-- Initialize AOS -->
@@ -166,6 +169,89 @@
 
     <!-- Data -->
     <script src="src/js/datafetch.js"></script>
+
+    <!-- HowlJS -->
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.4/dist/howler.min.js"></script>
+    <script>
+        var sound = new Howl({
+            src: ['music/noceiling.mp3']
+        });
+
+        const musicToggle = $("#music-toggler");
+        // Membuat elemen ikon volume menggunakan jQuery
+        const volumeIconOn = $("<i></i>").addClass("fa-solid fa-volume-high");
+        const volumeIconOff = $("<i></i>").addClass("fa-solid fa-volume-off");
+        musicToggle.append(volumeIconOff);
+        // Fungsi untuk mengubah ikon volume berdasarkan status pemutaran suara
+        function updateVolumeIcon() {
+            if (sound.playing()) {
+                // Jika sedang diputar, tampilkan ikon volume on
+                musicToggle.empty().append(volumeIconOn);
+            } else {
+                // Jika sedang tidak diputar, tampilkan ikon volume off
+                musicToggle.empty().append(volumeIconOff);
+            }
+        }
+
+        // Menggunakan toggle pada tombol musik
+        musicToggle.on("click", function () {
+            // Memeriksa apakah suara sedang diputar
+            if (sound.playing()) {
+                // Jika sedang diputar, hentikan pemutaran
+                sound.pause();
+            } else {
+                // Jika sedang tidak diputar, mulai pemutaran
+                sound.play();
+            }
+            // Memperbarui ikon volume setelah tindakan klik
+            updateVolumeIcon();
+        });
+
+        // Memastikan bahwa ikon volume awalnya adalah "off"
+
+        sound.on('play', function () {
+            updateVolumeIcon();
+        })
+
+        sound.on('load', function () {
+
+            // Mulai ulang pemutaran dari awal
+            sound.stop(); // Menghentikan pemutaran
+            sound.seek(0); // Mengatur posisi pemutaran ke awal
+            sound.play(); // Memulai pemutaran lagi
+        });
+
+        // Memulai ulang pemutaran saat audio selesai
+        sound.on('end', function () {
+            // Memulai ulang pemutaran dari awal
+            sound.stop(); // Menghentikan pemutaran
+            sound.seek(0); // Mengatur posisi pemutaran ke awal
+            sound.play(); // Memulai pemutaran lagi
+        });
+    </script>
+
+    <!-- My Logic -->
+    <script>
+        const floatingTrigger = $('#trigger-floating-nav');
+        const floatingNav = $('#floating-nav');
+        const floatingNavFirstChild = floatingNav.children().first();
+
+        floatingTrigger.on('click', function () {
+            // console.log('floating no hidden');
+            floatingNavFirstChild.css('left', '2px');
+            floatingTrigger.fadeOut();;
+        });
+
+        $(document).on('click', function (event) {
+            // Periksa apakah elemen yang diklik bukanlah bagian dari floatingNav atau floatingTrigger
+            if (!$(event.target).closest('#floating-nav, #trigger-floating-nav').length) {
+                // Jika bukan, sembunyikan floatingNav
+                floatingNavFirstChild.css('left', '-100rem');
+                floatingTrigger.fadeIn();
+            }
+        });
+    </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
